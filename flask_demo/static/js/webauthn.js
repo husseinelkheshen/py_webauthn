@@ -70,7 +70,7 @@ const didClickRegister = async (e) => {
 
     // post the transformed credential data to the server for validation
     // and storing the public key
-    let assertionValidationResponse;
+    // let assertionValidationResponse;
     try {
         assertionValidationResponse = await postNewAssertionToServer(newAssertionForServer);
     } catch (err) {

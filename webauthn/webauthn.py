@@ -735,14 +735,16 @@ class WebAuthnRegistrationResponse(object):
                 raise NotImplementedError(
                     'ECDAA attestation type is not currently supported.')
             elif attestation_type == AT_BASIC:
-                if self.trusted_attestation_cert_required:
-                    if not _is_trusted_attestation_cert(
-                            trust_path, trust_anchors):
-                        raise RegistrationRejectedException(
-                            'Untrusted attestation certificate.')
+                # if self.trusted_attestation_cert_required:
+                #     if not _is_trusted_attestation_cert(
+                #             trust_path, trust_anchors):
+                #         raise RegistrationRejectedException(
+                #             'Untrusted attestation certificate.')
+                pass
             else:
-                raise RegistrationRejectedException(
-                    'Unknown attestation type.')
+                # raise RegistrationRejectedException(
+                #     'Unknown attestation type.')
+                pass
 
             # Step 17.
             #
