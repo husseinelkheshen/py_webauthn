@@ -58,7 +58,7 @@ def index():
 def webauthn_begin_activate():
     # MakeCredentialOptions
     username = request.form.get('register_username')
-    display_name = request.form.get('register_display_name')
+    display_name = "test"
 
     if not util.validate_username(username):
         return make_response(jsonify({'fail': 'Invalid username.'}), 401)
