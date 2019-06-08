@@ -1,3 +1,7 @@
+To run the password demo, go into the passwords folder. Then run python3 pass.py. The page is hosted on localhost:4000.
+
+To run the WebAuthn demo, follow the instructions for the flask demo below.
+
 # PyWebAuthn
 
 [![PyPI](https://img.shields.io/pypi/v/webauthn.svg)](https://pypi.python.org/pypi/webauthn)
